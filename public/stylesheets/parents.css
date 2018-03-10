@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'buffalo_nickelregular';
+    src: url('../fonts/buffalo_nickel-webfont.woff2') format('woff2'),
+         url('../fonts/buffalo_nickel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.tabBox
+{
+    background-color: white;
+}
+
+.tab
+{
+    margin: 0;
+    color: white;
+    font-family: 'buffalo_nickelregular';
+    text-align: center;
+    background-color: blue;
+    padding: 10px 0 20px 0;
+    border-radius: 10px;
+    font-size: 2em;
+    height: 60px;
+    z-index: -1;
+}
+
+.tab:hover
+{
+    -webkit-filter: brightness(1.15);
+    filter: brightness(1.15);
+    color: white;
+}
+
+.tab.movies
+{
+    background: #ff6b26 url("../images/movies-tab-adult.jpg") no-repeat;
+    background-size: cover;
+    padding-right: 13.15%;
+    padding-left: 13.15%;
+}
+
+.tab.tv
+{
+    background: #52cc1f url("../images/television-tab-adult.jpg") no-repeat;
+    background-size: cover;
+    padding-right: 11.79%;
+    padding-left: 11.79%;
+}
+
+.tab.music
+{
+    background: #4049ff url("../images/music-tab-adult.jpg") no-repeat;
+    background-size: cover;
+    padding-right: 11.415%;
+    padding-left: 11.415%;
+}
+
+.box
+{
+    padding: 40px;
+}
+
+.recommended .box
+{
+    clear: left;
+    margin-top: -20px;
+    background: url("../images/movies-background-adult.jpg") no-repeat;
+    height: 712px;
+    color: white;
+    z-index: 1;
+}
+
+.recommended .box h3
+{
+
+    height: 10%;
+}
+
+.movie img
+{
+    border: 3px solid black;
+    max-width: 100%;
+}
+
+.box h3
+{
+    font-family: 'buffalo_nickelregular';
+    font-size: 3em;
+}
+
+.movie
+{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    max-width: 20%;
+}
+
+.movie img:hover
+{
+    border: 4px solid gray;
+}

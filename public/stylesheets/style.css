@@ -1,8 +1,200 @@
+@font-face {
+  font-family: 'back_to_black_demoregular';
+  src: url('../fonts/back_to_black_demo-webfont.woff2') format('woff2'),
+       url('../fonts/back_to_black_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'buffalo_nickelregular';
+  src: url('../fonts/buffalo_nickel-webfont.woff2') format('woff2'),
+       url('../fonts/buffalo_nickel-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  padding: 50px;
+  padding-top: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+header
+{
+  margin-bottom: 20px;
+}
+
+.roku
+{
+  height: 30%;
+  margin-top: 30px;
+}
+
+.flashback
+{
+  height: 25%;
+}
+
+.menu
+{
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+
+.hamMenu
+{
+  margin-top: 35px;
+}
+
+.settings
+{
+  margin-top: 33px;
+}
+
+.menu:hover
+{
+  -webkit-filter: brightness(0);
+  filter: brightness(0);
+}
+
+footer
+{
+  background-color: #4d4d4d;
+  padding: 20px 15px;
+}
+
+#footerRoku
+{
+  width: 16%;
+  height: 20%;
+}
+
+.welcome
+{
+  background: #193988 url("../images/welcome.jpg") no-repeat center;
+  border: 5px solid #193988;
+  padding: 0 12%;
+}
+
+.movies
+{
+  margin-left: 60px;
+}
+
+.television
+{
+  margin: 0 auto;
+}
+
+.music
+{
+  margin-right: 60px;
+}
+
+.mediaSection
+{
+  margin-top: 130px;
+  margin-bottom: 40px;
+  width: 25%;
+}
+
+.mediaSection p
+{
+  color: white;
+  text-align: center;
+  font-family: 'buffalo_nickelregular';
+  font-size: 1.5em;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.mediaSection h3
+{
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  border-radius: 28px;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.75em;
+  color: black;
+}
+
+.mediaSection h3:hover
+{
+  background-color: lightgray;
+}
+
+.accounts
+{
+  padding: 20px;
+}
+
+.accounts h3
+{
+  text-align: center;
+  font-size: 4em;
+}
+
+.adult
+{
+  display: inline-block;
+  margin-right: 85px;
+}
+
+.profile img
+{
+  width: 100%;
+}
+
+.child
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6c6c6c;
+  margin-right: 66px;
+}
+
+.child:last-child, .adult:last-child
+{
+  margin-right: 0;
+}
+
+.profile:hover
+{
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+}
+
+.services
+{
+  margin-top: 125px;
+  margin-bottom: 75px;
+}
+
+.services h3, .services p
+{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.decade
+{
+  width: 19.5%;
+}
+
+.decade:hover
+{
+  -webkit-filter: brightness(1.25);
+  filter: brightness(1.25);
 }

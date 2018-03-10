@@ -1,4 +1,132 @@
-body {
-  background-color : red;
+@font-face {
+  font-family: 'buffalo_nickelregular';
+  src: url('../fonts/buffalo_nickel-webfont.woff2') format('woff2'),
+       url('../fonts/buffalo_nickel-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bubblegum_sansregular';
+  src: url('../fonts/bubblegumsans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/bubblegumsans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tabBox
+{
+  background-color: white;
+}
+
+.tab
+{
+  margin: 0;
+  color: white;
+  font-family: 'buffalo_nickelregular';
+  text-align: center;
+  background-color: blue;
+  padding: 10px 0 20px 0;
+  border-radius: 10px;
+  font-size: 2em;
+  height: 60px;
+  z-index: -1;
+}
+
+.tab img
+{
+  width: 6%;
+}
+
+.tab:hover
+{
+  -webkit-filter: brightness(1.15);
+  filter: brightness(1.15);
+  color: white;
+}
+
+.tab.movies
+{
+  background: #ff6b26 url("../images/movies-tab-kid.jpg") no-repeat;
+  padding-right: 14.05%;
+  padding-left: 14.05%;
+}
+
+.tab.tv
+{
+  background: #52cc1f url("../images/television-tab-kid.jpg") no-repeat;
+  padding-right: 14.65%;
+  padding-left: 14.65%;
+}
+
+.tab.music
+{
+  background: #4049ff url("../images/music-tab-kid.jpg") no-repeat;
+  padding-right: 11.695%;
+  padding-left: 11.695%;
+}
+
+.box
+{
+  padding: 40px;
+}
+
+.recommended .box
+{
+  clear: left;
+  margin-top: -20px;
+  background: #ff6b26 url("../images/movies-background-kid.jpg") no-repeat;
   color: black;
+  z-index: 1;
+}
+
+.recommended .box h3
+{
+  height: 10%;
+}
+
+.movie img
+{
+  border: 3px solid black;
+  max-width: 100%;
+}
+
+.box h3
+{
+  font-family: 'bubblegum_sansregular';
+  font-size: 3em;
+}
+
+.movie
+{
+  margin-left: 40px;
+  margin-bottom: 20px;
+  max-width: 20%;
+}
+
+.movie img:hover
+{
+  border: 4px solid gray;
+}
+
+.lightbox
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    display: none;
+    overflow: auto;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 500;
+}
+
+.movieDetails
+{
+    color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+    padding: 20px;
 }

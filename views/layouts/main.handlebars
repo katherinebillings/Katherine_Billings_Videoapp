@@ -5,22 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--{{#if kidsmode}}
-    <link rel="stylesheet" href="stylesheets/kids.css">
-  {{/if}}-->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
   {{#if cms}}
     <link rel="stylesheet" href="stylesheets/form.css">
+  {{/if}}
+  {{#if parent}}
+    <link rel="stylesheet" href="stylesheets/parents.css">
+  {{/if}}
+  {{#if kids}}
+    <link rel="stylesheet" href="stylesheets/kids.css">
   {{/if}}
   <title>{{ title }}</title>
 </head>
 <body>
+  <header>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <img src="images/roku.svg" alt="Roku Logo" class="roku small-2 cell">
+        <a href="/"  class="flashback small-offset-1 small-6 cell"><img src="images/flashback.svg" alt="Flashback Logo"></a>
+        <div id="menu" class="small-3 cell">
+          <img src="images/User-Profile.png" alt="Profile" class="menu user">
+          <img src="images/Hamburger-Menu.png" alt="Menu" class="menu hamMenu">
+          <img src="images/Settings.png" alt="Setting" class="menu settings">
+        </div>
+      </div>
+    </div>
+  </header>
   {{{ body }}}
+  <footer>
+    <div class="grid-container" id="footer">
+      <div class="grid-x grid-padding-x">
+        <img src="images/roku-footer.svg" alt="Logo" id="footerRoku" class="small-3 cell">
+      </div>
+    </div>
+  </footer>
   {{#if mainpage}}
     <script src="javascripts/main.js"></script>
   {{/if}}
-
-  {{#if cms}}
-    <script src="/javascripts/cmsHandler.js"></script>
+  {{#if kids}}
+    <div class="small-12 hide">
+      <h1 class="request-state"></h1>
+    </div>
+    <script src="/javascripts/kids.js"></script>
+  {{/if}}
+  {{#if parent}}
+    <div class="small-12 hide">
+      <h1 class="request-state"></h1>
+    </div>
+    <script src="/javascripts/parent.js"></script>
   {{/if}}
 </body>
 </html>
